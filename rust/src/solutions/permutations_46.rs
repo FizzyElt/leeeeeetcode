@@ -3,15 +3,14 @@ pub fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {
         return vec![vec![]];
     }
 
-    nums.clone()
-        .into_iter()
+    nums.iter()
         .flat_map(|x| {
-            let new_nums: Vec<i32> = nums.clone().into_iter().filter(|y| *y != x).collect();
+            let new_nums: Vec<i32> = nums.clone().into_iter().filter(|y| *y != *x).collect();
 
             permute(new_nums)
                 .into_iter()
                 .map(|mut v| {
-                    v.insert(0, x);
+                    v.insert(0, *x);
                     v
                 })
                 .collect::<Vec<Vec<i32>>>()
@@ -28,11 +27,11 @@ mod tests {
         assert_eq!(permute(vec![1]), vec![vec![1]]);
     }
     #[test]
-    fn permute_two_item() {
+    fn permute_two_items() {
         assert_eq!(permute(vec![1, 2]), vec![vec![1, 2], vec![2, 1]]);
     }
     #[test]
-    fn permute_three_item() {
+    fn permute_three_items() {
         assert_eq!(
             permute(vec![1, 2, 3]),
             vec![
