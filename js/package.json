@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-all": "mocha ./*/test.mjs"
   },
   "keywords": [],
   "author": "",
