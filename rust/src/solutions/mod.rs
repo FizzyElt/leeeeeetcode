@@ -6,6 +6,8 @@ pub mod find_duplicate_287;
 pub mod four_sum_18;
 pub mod is_monotonic_896;
 pub mod largest_perimeter_976;
+pub mod linked_list_in_binary_tree_1367;
+pub mod multiply_strings_43;
 pub mod n_queens_51;
 pub mod nearest_valid_point_1779;
 pub mod number_of_1bits_191;
