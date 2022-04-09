@@ -1,3 +1,5 @@
+pub mod add_binary_67;
+pub mod add_to_array_from_989;
 pub mod average_1491;
 pub mod balanced_binary_tree_110;
 pub mod count_odds_1523;
