@@ -16,6 +16,8 @@ pub mod linked_list_in_binary_tree_1367;
 pub mod multiply_strings_43;
 pub mod n_queens_51;
 pub mod nearest_valid_point_1779;
+pub mod next_greater_element_ll_503;
+pub mod next_greater_element_lll_556;
 pub mod number_of_1bits_191;
 pub mod permutations_46;
 pub mod plus_one_66;
