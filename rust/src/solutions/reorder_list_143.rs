@@ -1,5 +1,3 @@
-use std::borrow::Borrow;
-
 use crate::data_structure::linked_list::ListNode;
 
 pub fn reorder_list(head: &mut Option<Box<ListNode>>) {
