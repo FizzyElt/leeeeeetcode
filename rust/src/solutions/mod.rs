@@ -24,6 +24,7 @@ pub mod number_of_1bits_191;
 pub mod permutations_46;
 pub mod plus_one_66;
 pub mod range_sum_query_2D_304;
+pub mod reorder_list_143;
 pub mod repeated_substring_pattern_459;
 pub mod rotate_image_48;
 pub mod smallest_range_ll_910;
