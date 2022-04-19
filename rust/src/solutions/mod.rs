@@ -1,5 +1,7 @@
 pub mod add_binary_67;
 pub mod add_to_array_from_989;
+pub mod add_two_numbers_2;
+pub mod add_two_numbers_ll_445;
 pub mod arithmetic_subarrays_1630;
 pub mod average_1491;
 pub mod balanced_binary_tree_110;
