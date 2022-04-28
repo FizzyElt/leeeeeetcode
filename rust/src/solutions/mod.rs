@@ -18,6 +18,7 @@ pub mod is_monotonic_896;
 pub mod k_closest_points_to_origin_973;
 pub mod largest_perimeter_976;
 pub mod linked_list_in_binary_tree_1367;
+pub mod minimum_size_subarray_sum_209;
 pub mod multiply_strings_43;
 pub mod n_queens_51;
 pub mod nearest_valid_point_1779;
