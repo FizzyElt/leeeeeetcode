@@ -25,6 +25,8 @@ pub mod nearest_valid_point_1779;
 pub mod next_greater_element_ll_503;
 pub mod next_greater_element_lll_556;
 pub mod number_of_1bits_191;
+pub mod number_of_islands_200;
+pub mod number_of_provinces_547;
 pub mod permutations_46;
 pub mod plus_one_66;
 pub mod range_sum_query_2D_304;
