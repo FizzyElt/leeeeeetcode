@@ -6,6 +6,7 @@ pub mod arithmetic_subarrays_1630;
 pub mod average_1491;
 pub mod balanced_binary_tree_110;
 pub mod binary_search_tree_iterator_173;
+pub mod combination_sum_39;
 pub mod count_odds_1523;
 pub mod daily_temperatures_739;
 pub mod evaluate_reserve_polish_notation_150;
