@@ -18,7 +18,7 @@ fs.readdir('./', { withFileTypes: true }, (err, files) => {
       return numA - numB;
     })
     .map(([id, name]) => {
-      return `${id}. ${name.split('-').join(' ')}`;
+      return `- \`${id}\` ${name.split('-').join(' ')}`;
     });
 
   fs.writeFileSync('./README.md', questions.join('\n'));
