@@ -23,7 +23,7 @@ fs.readdir('./src/solutions', { withFileTypes: true }, (err, files) => {
       return numA - numB;
     })
     .map(([id, name]) => {
-      return `${id}. ${name}`;
+      return `- \`${id}\` ${name}`;
     });
 
   fs.writeFileSync('./README.md', questions.join('\n'));
