@@ -43,3 +43,4 @@ pub mod subset_xor_sum_1863;
 pub mod subtract_product_and_sum_1281;
 pub mod three_sum_15;
 pub mod time_needed_to_inform_all_employees_1376;
+pub mod student_attendance_record_I_551;
