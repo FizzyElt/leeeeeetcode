@@ -19,6 +19,7 @@
 - `191` number of 1bits
 - `200` number of islands
 - `209` minimum size subarray sum
+- `212` word search ii
 - `216` combination sum III
 - `287` find duplicate
 - `304` range sum query 2D
