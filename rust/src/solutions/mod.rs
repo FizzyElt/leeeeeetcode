@@ -35,6 +35,7 @@ pub mod plus_one_66;
 pub mod range_sum_query_2D_304;
 pub mod reorder_list_143;
 pub mod repeated_substring_pattern_459;
+pub mod reverse_nodes_in_k_group_25;
 pub mod rotate_image_48;
 pub mod rotate_list_61;
 pub mod smallest_range_ll_910;

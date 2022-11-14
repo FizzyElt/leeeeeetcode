@@ -1,6 +1,7 @@
 - `2` add two numbers
 - `15` three sum
 - `18` four sum
+- `25` reverse nodes in k group
 - `39` combination sum
 - `40` combination sum ll
 - `43` multiply strings
