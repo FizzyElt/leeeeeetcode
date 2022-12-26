@@ -19,6 +19,7 @@ pub mod find_rotation_1886;
 pub mod four_sum_18;
 pub mod group_anagrams_49;
 pub mod is_monotonic_896;
+pub mod jump_game_55;
 pub mod k_closest_points_to_origin_973;
 pub mod largest_perimeter_976;
 pub mod linked_list_in_binary_tree_1367;
