@@ -10,6 +10,7 @@
 - `49` group anagrams
 - `51` n queens
 - `54` spiral matrix
+- `55` jump game
 - `61` rotate list
 - `66` plus one
 - `67` add binary
