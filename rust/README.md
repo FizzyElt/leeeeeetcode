@@ -49,3 +49,4 @@
 - `1779` nearest valid point
 - `1863` subset xor sum
 - `1886` find rotation
+- `2279` maximum bags with full capacity of rocks

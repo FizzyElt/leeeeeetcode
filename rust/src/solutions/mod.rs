@@ -23,6 +23,7 @@ pub mod jump_game_55;
 pub mod k_closest_points_to_origin_973;
 pub mod largest_perimeter_976;
 pub mod linked_list_in_binary_tree_1367;
+pub mod maximum_bags_with_full_capacity_of_rocks_2279;
 pub mod minimum_size_subarray_sum_209;
 pub mod multiply_strings_43;
 pub mod n_queens_51;
