@@ -14,6 +14,7 @@
 - `61` rotate list
 - `66` plus one
 - `67` add binary
+- `91` decode ways
 - `110` balanced binary tree
 - `138` copy list with random pointer
 - `143` reorder list
