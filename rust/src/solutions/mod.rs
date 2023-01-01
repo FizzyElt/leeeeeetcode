@@ -12,6 +12,7 @@ pub mod combination_sum_III_216;
 pub mod combination_sum_ll_40;
 pub mod count_odds_1523;
 pub mod daily_temperatures_739;
+pub mod decode_ways_91;
 pub mod evaluate_reserve_polish_notation_150;
 pub mod find_all_anagrams_in_a_string_438;
 pub mod find_duplicate_287;
