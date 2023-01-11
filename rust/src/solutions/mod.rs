@@ -26,6 +26,7 @@ pub mod largest_perimeter_976;
 pub mod linked_list_in_binary_tree_1367;
 pub mod maximum_bags_with_full_capacity_of_rocks_2279;
 pub mod minimum_size_subarray_sum_209;
+pub mod minimum_time_to_collect_all_apples_in_a_tree_1443;
 pub mod multiply_strings_43;
 pub mod n_queens_51;
 pub mod nearest_valid_point_1779;
