@@ -34,6 +34,7 @@ pub mod next_greater_element_ll_503;
 pub mod next_greater_element_lll_556;
 pub mod number_of_1bits_191;
 pub mod number_of_islands_200;
+pub mod number_of_nodes_in_the_sub_tree_with_the_same_label_1519;
 pub mod number_of_provinces_547;
 pub mod permutations_46;
 pub mod plus_one_66;
