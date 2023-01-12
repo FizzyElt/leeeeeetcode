@@ -48,6 +48,7 @@
 - `1376` time needed to inform all employees
 - `1443` minimum time to collect all apples in a tree
 - `1491` average
+- `1519` number of nodes in the sub tree with the same label
 - `1523` count odds
 - `1630` arithmetic subarrays
 - `1779` nearest valid point
