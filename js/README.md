@@ -39,6 +39,7 @@
 - `556` next greater element lll
 - `713` subarray product less than k
 - `739` daily temperatures
+- `752` open the lock
 - `896` is monotonic
 - `910` smallest range ll
 - `973` k closest points to origin
