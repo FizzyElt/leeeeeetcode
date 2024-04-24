@@ -29,6 +29,7 @@
 - `287` find duplicate
 - `304` range sum query 2D
 - `309` best time to buy and sell stock with cooldown
+- `310` minimum height trees
 - `429` tree level order traversal
 - `438` find all anagrams
 - `445` add two numers ll
@@ -45,6 +46,7 @@
 - `973` k closest points to origin
 - `976` largest perimeter
 - `989` add to array form
+- `1137` N th tribonacci number
 - `1281` subtract product and sum
 - `1367` linked list in binary tree
 - `1376` time needed to inform all employees
