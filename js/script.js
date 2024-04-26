@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 
 fs.readdir('./', { withFileTypes: true }, (err, files) => {
   if (err) {
@@ -11,10 +11,10 @@ fs.readdir('./', { withFileTypes: true }, (err, files) => {
       return file.isDirectory();
     })
     .map((file) => file.name.split('_'))
-    .filter(([id, name]) => !isNaN(Number(id)) && !!name)
+    .filter(([id, name]) => !Number.isNaN(Number(id)) && !!name)
     .sort((a, b) => {
-      const numA = parseInt(a[0]);
-      const numB = parseInt(b[0]);
+      const numA = Number.parseInt(a[0]);
+      const numB = Number.parseInt(b[0]);
       return numA - numB;
     })
     .map(([id, name]) => {
