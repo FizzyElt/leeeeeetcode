@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
 // import fs from 'fs';
 // import path from 'path';
@@ -16,10 +16,10 @@ fs.readdir('./src/solutions', { withFileTypes: true }, (err, files) => {
       const id = name.pop();
       return [id, name.join(' ')];
     })
-    .filter(([id, name]) => !isNaN(Number(id)) && !!name)
+    .filter(([id, name]) => !Number.isNaN(Number(id)) && !!name)
     .sort((a, b) => {
-      const numA = parseInt(a[0]);
-      const numB = parseInt(b[0]);
+      const numA = Number.parseInt(a[0]);
+      const numB = Number.parseInt(b[0]);
       return numA - numB;
     })
     .map(([id, name]) => {
