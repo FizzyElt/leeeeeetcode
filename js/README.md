@@ -35,6 +35,7 @@
 - `445` add two numers ll
 - `459` repeated substring pattern
 - `503` next greater element ll
+- `514` freedom
 - `547` number of provinces
 - `551` student attendance record i
 - `556` next greater element lll
