@@ -57,3 +57,4 @@
 - `1886` find rotation
 - `2279` maximum bags with full capacity of rocks
 - `2370` longest ideal subsequence
+- `2997` minimum number of operations to make array xor equal to k
