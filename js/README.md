@@ -62,6 +62,7 @@
 - `1779` nearest valid point
 - `1863` subset xor sum
 - `1886` find rotation
+- `1915` number of wonderful substrings
 - `2279` maximum bags with full capacity of rocks
 - `2370` longest ideal subsequence
 - `2997` minimum number of operations to make array XOR equal to K
