@@ -67,4 +67,7 @@
 - `1915` number of wonderful substrings
 - `2279` maximum bags with full capacity of rocks
 - `2370` longest ideal subsequence
+- `2487` remove nodes from linked list
+- `2816` double a number represented as a linked list
 - `2997` minimum number of operations to make array XOR equal to K
+- `3075` maximize happiness of selected children
