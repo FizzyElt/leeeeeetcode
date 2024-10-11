@@ -1,14 +1,14 @@
 pub fn rotate(matrix: &mut Vec<Vec<i32>>) {
     let len = matrix.len();
 
+    matrix.reverse();
+
     for i in 0..len {
-        for j in 0..len - i {
+        for j in 0..i {
             let temp = matrix[i][j];
 
-            matrix[i][j] = matrix[len - 1 - j][len - 1 - i];
-            matrix[len - 1 - j][len - 1 - i] = temp;
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = temp;
         }
     }
-
-    matrix.reverse();
 }
