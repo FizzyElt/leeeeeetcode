@@ -48,6 +48,7 @@
 - `1367` linked list in binary tree
 - `1376` time needed to inform all employees
 - `1443` minimum time to collect all apples in a tree
+- `1472` design browser history
 - `1491` average
 - `1519` number of nodes in the sub tree with the same label
 - `1523` count odds
