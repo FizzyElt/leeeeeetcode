@@ -1,13 +1,13 @@
 function groupAnagrams(strs) {
-  const m = new Map();
+	const m = new Map();
 
-  strs.forEach((str) => {
-    const sortedStr = str.split('').sort().join('');
+	for (const str of strs) {
+		const sortedStr = str.split("").sort().join("");
 
-    m.set(sortedStr, [...(m.get(sortedStr) || []), str]);
-  });
+		m.set(sortedStr, [...(m.get(sortedStr) || []), str]);
+	}
 
-  return [...m.values()];
+	return [...m.values()];
 }
 
-console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
