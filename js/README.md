@@ -32,6 +32,7 @@
 - `304` range sum query 2D
 - `309` best time to buy and sell stock with cooldown
 - `310` minimum height trees
+- `338` counting bits
 - `429` tree level order traversal
 - `438` find all anagrams
 - `445` add two numers ll

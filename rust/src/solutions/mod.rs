@@ -11,6 +11,7 @@ pub mod combination_sum_39;
 pub mod combination_sum_III_216;
 pub mod combination_sum_ll_40;
 pub mod count_odds_1523;
+pub mod counting_bits_338;
 pub mod daily_temperatures_739;
 pub mod decode_ways_91;
 pub mod design_browser_history_1472;
