@@ -1,6 +1,6 @@
 (lang dune 3.14)
 
-(name ocaml)
+(name leetcode_with_ocaml)
 
 (source
  (github username/reponame))
@@ -14,7 +14,7 @@
 (documentation https://url/to/documentation)
 
 (package
- (name ocaml)
+ (name leetcode_with_ocaml)
  (synopsis "A short synopsis")
  (description "A longer description")
  (depends ocaml dune)
