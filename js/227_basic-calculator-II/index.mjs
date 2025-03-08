@@ -9,14 +9,14 @@ function calculate(s) {
       return list;
     }
 
-    if (c === '*' || c === '-' || c === '+' || c === '/') {
+    if (c === "*" || c === "-" || c === "+" || c === "/") {
       list.push(c);
       return list;
     }
 
     const poped = list.pop();
 
-    if (poped === '*' || poped === '-' || poped === '+' || poped === '/') {
+    if (poped === "*" || poped === "-" || poped === "+" || poped === "/") {
       list.push(poped, c);
     } else {
       list.push(poped + c);
@@ -29,19 +29,19 @@ function calculate(s) {
   for (let i = 0; i < tokens.length - 1; i++) {
     const sign = tokens[i];
     const num = Number(tokens[i + 1]);
-    if (sign === '+') {
+    if (sign === "+") {
       stack.push(num);
       continue;
     }
-    if (sign === '-') {
+    if (sign === "-") {
       stack.push(num * -1);
       continue;
     }
-    if (sign === '*') {
+    if (sign === "*") {
       stack.push(stack.pop() * num);
       continue;
     }
-    if (sign === '/') {
+    if (sign === "/") {
       stack.push(Math.trunc(stack.pop() / num));
     }
   }
@@ -49,4 +49,4 @@ function calculate(s) {
   return stack.reduce((a, b) => a + b, 0);
 }
 
-console.log(calculate('3+2*2'));
+console.log(calculate("3+2*2"));

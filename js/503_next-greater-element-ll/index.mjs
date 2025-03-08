@@ -2,10 +2,10 @@ function nextGreaterElements(nums) {
   const len = nums.length;
   const stack = Array.from(
     { length: len },
-    (_, index) => nums[len - index - 1]
+    (_, index) => nums[len - index - 1],
   );
 
-  let res = new Array(len).fill(-1);
+  const res = new Array(len).fill(-1);
 
   for (let i = len - 1; i >= 0; i--) {
     while (stack.length !== 0 && nums[i] >= stack[stack.length - 1]) {

@@ -25,7 +25,7 @@ function deepEq(num, target) {
 
 function rotate(num) {
   const len = num.length;
-  let newArr = Array.from({ length: len }, () => new Array(len).fill(0));
+  const newArr = Array.from({ length: len }, () => new Array(len).fill(0));
 
   for (let i = 0; i < len; i++) {
     for (let j = len - 1; j >= 0; j--) {

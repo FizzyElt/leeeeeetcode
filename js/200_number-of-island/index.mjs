@@ -6,7 +6,7 @@ function numIslands(grid) {
 
   grid.forEach((row, i) => {
     row.forEach((c, j) => {
-      if (c === '1' && !visit[i][j]) {
+      if (c === "1" && !visit[i][j]) {
         count += 1;
         dfs(i, j);
       }
@@ -14,7 +14,7 @@ function numIslands(grid) {
   });
 
   function dfs(x, y) {
-    if (grid[x][y] === '0') {
+    if (grid[x][y] === "0") {
       return;
     }
 

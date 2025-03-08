@@ -1,15 +1,16 @@
 function combinationSum(candidates, target) {
   const getCombination = (ansArr, currentCombination, currSum, currIndex) => {
-    if (currSum > target) return;
-    if (currSum === target) ansArr.push([...currentCombination]);
+    let currentSum = currSum;
+    if (currentSum > target) return;
+    if (currentSum === target) ansArr.push([...currentCombination]);
 
     for (let i = currIndex; i < candidates.length; i++) {
       currentCombination.push(candidates[i]);
-      currSum = getCombination(
+      currentSum = getCombination(
         ansArr,
         currentCombination,
-        currSum + candidates[i],
-        i
+        currentSum + candidates[i],
+        i,
       );
       currentCombination.pop(); // backtracking
     }

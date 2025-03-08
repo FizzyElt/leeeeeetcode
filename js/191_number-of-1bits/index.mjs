@@ -1,7 +1,8 @@
 function hammingWeight(n) {
+  let num = n;
   let count = 0;
-  while (n) {
-    n = n & (n - 1);
+  while (num) {
+    num = num & (num - 1);
     count += 1;
   }
   return count;

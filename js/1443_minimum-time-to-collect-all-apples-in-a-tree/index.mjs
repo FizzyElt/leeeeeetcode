@@ -4,7 +4,7 @@
  * @param {boolean[]} hasApple
  * @return {number}
  */
-var minTime = function (n, edges, hasApple) {
+function minTime(n, edges, hasApple) {
   const map = edges.reduce((acc, edge) => {
     const [origin, target] = edge;
 
@@ -23,9 +23,10 @@ var minTime = function (n, edges, hasApple) {
     visited.add(root);
 
     let subTreePath = 0;
-    children.forEach((node) => {
+
+    for (const node of children) {
       subTreePath += dfs(node);
-    });
+    }
 
     subTreePath += hasApple[root] || subTreePath > 0 ? 2 : 0;
 
@@ -36,4 +37,4 @@ var minTime = function (n, edges, hasApple) {
   const res = dfs(0);
 
   return res > 0 ? res - 2 : 0;
-};
+}

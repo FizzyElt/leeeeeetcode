@@ -1,6 +1,6 @@
 function addBinary(a, b) {
-  const aChars = a.split('').reverse();
-  const bChars = b.split('').reverse();
+  const aChars = a.split("").reverse();
+  const bChars = b.split("").reverse();
 
   const maxLength = Math.max(a.length, b.length);
 
@@ -8,8 +8,12 @@ function addBinary(a, b) {
   let carry = 0;
 
   for (let i = 0; i < maxLength; i++) {
-    const aNum = isNaN(parseInt(aChars[i])) ? 0 : parseInt(aChars[i]);
-    const bNum = isNaN(parseInt(bChars[i])) ? 0 : parseInt(bChars[i]);
+    const aNum = Number.isNaN(Number.parseInt(aChars[i]))
+      ? 0
+      : Number.parseInt(aChars[i]);
+    const bNum = Number.isNaN(Number.parseInt(bChars[i]))
+      ? 0
+      : Number.parseInt(bChars[i]);
 
     const sum = aNum + bNum + carry;
 
@@ -27,5 +31,5 @@ function addBinary(a, b) {
   return res
     .slice(noneZeroIndex)
     .map((n) => n.toString())
-    .join('');
+    .join("");
 }

@@ -1,11 +1,11 @@
 function evalRPN(tokens) {
-  const operators = ['+', '-', '*', '/'];
+  const operators = ["+", "-", "*", "/"];
 
   const stack = [];
 
   for (let i = 0; i < tokens.length; i++) {
     if (!operators.includes(tokens[i])) {
-      stack.push(parseInt(tokens[i]));
+      stack.push(Number.parseInt(tokens[i]));
       continue;
     }
 
@@ -14,17 +14,17 @@ function evalRPN(tokens) {
     const leftNumber = stack.pop();
 
     switch (operator) {
-      case '+':
+      case "+":
         stack.push(leftNumber + rightNumber);
         break;
-      case '-':
+      case "-":
         stack.push(leftNumber - rightNumber);
         break;
-      case '*':
+      case "*":
         stack.push(leftNumber * rightNumber);
         break;
-      case '/':
-        stack.push(parseInt(leftNumber / rightNumber));
+      case "/":
+        stack.push(Number.parseInt(leftNumber / rightNumber));
         break;
     }
   }

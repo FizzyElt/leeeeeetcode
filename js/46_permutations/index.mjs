@@ -1,5 +1,3 @@
-import * as R from 'ramda';
-
 // normal solution
 export function permute(nums) {
   const res = [];
@@ -10,13 +8,13 @@ export function permute(nums) {
       return;
     }
 
-    nums.forEach((num) => {
+    for (num of nums) {
       backtrack(
         nums.filter((n) => n !== num),
         path.concat(num),
-        res
+        res,
       );
-    });
+    }
   }
   backtrack(nums, [], res);
   return res;
@@ -30,17 +28,6 @@ export function permute2(nums) {
         permute2(nums.filter((n) => n !== num)).map((resNums) => [
           num,
           ...resNums,
-        ])
+        ]),
       );
 }
-
-// ramda single line solution
-export const permute3 = (nums) => {
-  return R.ifElse(
-    R.propEq('length', 0),
-    R.always([[]]),
-    R.chain((num) =>
-      permute3(R.without([num], nums)).map((resNums) => [num, ...resNums])
-    )
-  )(nums);
-};

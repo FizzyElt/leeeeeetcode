@@ -1,5 +1,5 @@
 function addToArrayForm(num, k) {
-  let kNum = [];
+  const kNum = [];
   let n = k;
   while (n > 0) {
     kNum.push(n % 10);
@@ -7,9 +7,9 @@ function addToArrayForm(num, k) {
   }
 
   const maxLength = Math.max(num.length, kNum.length);
-  let reversedNum = num.reverse();
+  const reversedNum = num.reverse();
   let carry = 0;
-  let resNum = [];
+  const resNum = [];
 
   for (let i = 0; i < maxLength; i++) {
     const numA = reversedNum[i] ?? 0;

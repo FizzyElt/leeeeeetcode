@@ -10,21 +10,21 @@
  * @return {ListNode}
  */
 function removeNodes(head) {
-	if (head === null) {
-		return null;
-	}
+  if (head === null) {
+    return null;
+  }
 
-	if (head.next === null) {
-		return head;
-	}
+  if (head.next === null) {
+    return head;
+  }
 
-	const nextNode = removeNodes(head.next);
+  const nextNode = removeNodes(head.next);
 
-	if (nextNode.val > head.val) {
-		return nextNode;
-	}
+  if (nextNode.val > head.val) {
+    return nextNode;
+  }
 
-	head.next = nextNode;
+  head.next = nextNode;
 
-	return head;
+  return head;
 }

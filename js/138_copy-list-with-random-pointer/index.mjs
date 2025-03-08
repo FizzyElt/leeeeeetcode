@@ -22,7 +22,7 @@ function copyRandomList(head) {
     list[i].next = list[i + 1] ?? null;
 
     const originRandom = list[i].random;
-    
+
     if (originRandom !== null) {
       const index = originList.findIndex((node) => node === originRandom);
       list[i].random = list[index];

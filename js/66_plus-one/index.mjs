@@ -16,5 +16,4 @@ function plusOne(digits) {
   }
 
   return digits;
-  return digits;
 }

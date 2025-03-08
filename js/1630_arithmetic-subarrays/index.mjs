@@ -1,6 +1,6 @@
 export function checkArithmeticSubarrays(nums, l, r) {
   const m = l.length;
-  let res = new Array(l.length).fill(false);
+  const res = new Array(l.length).fill(false);
   for (let i = 0; i < m; i++) {
     const start = l[i];
     const end = r[i];

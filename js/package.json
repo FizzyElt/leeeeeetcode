@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "mocha",
-    "test-all": "mocha ./*/test.mjs"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "assert": "^2.0.0",
-    "mocha": "^9.2.2",
-    "ramda": "^0.28.0"
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@biomejs/biome"
+    ],
+    "onlyBuiltDependencies": [
+      "@biomejs/biome"
+    ]
   }
 }

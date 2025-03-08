@@ -14,7 +14,7 @@ function findRotateSteps(ring, key) {
     }
   }
   const memo = Array.from({ length: ring.length }, (_, index) =>
-    Array.from({ length: key.length }, () => -1)
+    Array.from({ length: key.length }, () => -1),
   );
 
   const dfs = (ringI, keyI) => {

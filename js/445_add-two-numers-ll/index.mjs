@@ -1,4 +1,4 @@
-import { ListNode } from '../utils/linked_list.mjs';
+import { ListNode } from "../utils/linked_list.mjs";
 
 function addTwoNumbers(l1, l2) {
   const reversedL1 = reverseNode(l1);
@@ -7,7 +7,7 @@ function addTwoNumbers(l1, l2) {
   let n1 = reversedL1;
   let n2 = reversedL2;
   let carry = 0;
-  let resHead = new ListNode(0, null);
+  const resHead = new ListNode(0, null);
   let current = resHead;
 
   while (n1 !== null || n2 !== null) {

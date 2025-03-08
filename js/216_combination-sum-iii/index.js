@@ -10,8 +10,8 @@
  * @param {number} n
  * @return {number[][]}
  */
-var combinationSum3 = function (k, n) {
-  let res = [];
+function combinationSum3(k, n) {
+  const res = [];
 
   function dfs(currArr, startIndex, remainNumber) {
     if (currArr.length === k) {
@@ -29,5 +29,5 @@ var combinationSum3 = function (k, n) {
   dfs([], 1, n);
 
   return res;
-};
+}
 // @lc code=end

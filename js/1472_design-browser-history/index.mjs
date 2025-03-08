@@ -2,8 +2,8 @@
  * @param {string} homepage
  */
 const BrowserHistory = function (homepage) {
-	this.cursor = 0;
-	this.history = [homepage];
+  this.cursor = 0;
+  this.history = [homepage];
 };
 
 /**
@@ -11,11 +11,11 @@ const BrowserHistory = function (homepage) {
  * @return {void}
  */
 BrowserHistory.prototype.visit = function (url) {
-	this.history = this.history.slice(0, this.cursor + 1);
-	this.history.push(url);
-	this.cursor = this.history.length - 1;
+  this.history = this.history.slice(0, this.cursor + 1);
+  this.history.push(url);
+  this.cursor = this.history.length - 1;
 
-	return null;
+  return null;
 };
 
 /**
@@ -23,8 +23,8 @@ BrowserHistory.prototype.visit = function (url) {
  * @return {string}
  */
 BrowserHistory.prototype.back = function (steps) {
-	this.cursor = Math.max(0, this.cursor - steps);
-	return this.history[this.cursor];
+  this.cursor = Math.max(0, this.cursor - steps);
+  return this.history[this.cursor];
 };
 
 /**
@@ -32,9 +32,9 @@ BrowserHistory.prototype.back = function (steps) {
  * @return {string}
  */
 BrowserHistory.prototype.forward = function (steps) {
-	this.cursor = Math.min(this.history.length - 1, this.cursor + steps);
+  this.cursor = Math.min(this.history.length - 1, this.cursor + steps);
 
-	return this.history[this.cursor];
+  return this.history[this.cursor];
 };
 
 /**

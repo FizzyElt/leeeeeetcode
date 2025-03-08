@@ -1,5 +1,5 @@
 function nextGreaterElement(n) {
-  let arr = n.toString().split('');
+  const arr = n.toString().split("");
   let pivot = -1;
   for (let i = arr.length - 1; i > 0; i--) {
     if (arr[i - 1] < arr[i]) {
@@ -17,6 +17,6 @@ function nextGreaterElement(n) {
   }
   const left = arr.slice(0, pivot + 1);
   const right = arr.slice(pivot + 1).reverse();
-  const res = Number(left.join('') + right.join(''));
-  return res > Math.pow(2, 31) - 1 ? -1 : res;
+  const res = Number(left.join("") + right.join(""));
+  return res > 2 ** 31 - 1 ? -1 : res;
 }

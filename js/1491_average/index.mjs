@@ -3,7 +3,7 @@ function average(salary) {
   let min = 100001;
   let max = 0;
 
-  salary.forEach((value) => {
+  for (const value of salary) {
     if (value > max) {
       max = value;
     }
@@ -12,7 +12,7 @@ function average(salary) {
     }
 
     sum += value;
-  });
+  }
 
   return (sum - max - min) / (salary.length - 2);
 }

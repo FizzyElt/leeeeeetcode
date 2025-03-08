@@ -1,6 +1,6 @@
 function dailyTemperatures(temperatures) {
   const stack = [];
-  let res = new Array(temperatures.length).fill(0);
+  const res = new Array(temperatures.length).fill(0);
   for (let i = temperatures.length - 1; i >= 0; i--) {
     while (
       stack.length !== 0 &&
@@ -14,6 +14,5 @@ function dailyTemperatures(temperatures) {
     stack.push(i);
   }
 
-
-  return res
+  return res;
 }

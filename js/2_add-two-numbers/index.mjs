@@ -1,10 +1,10 @@
-import { ListNode } from '../utils/linked_list.mjs';
+import { ListNode } from "../utils/linked_list.mjs";
 
 export function addTwoNumbers(l1, l2) {
   let n1 = l1;
   let n2 = l2;
   let carry = 0;
-  let resHead = new ListNode(0, null);
+  const resHead = new ListNode(0, null);
 
   let current = resHead;
 

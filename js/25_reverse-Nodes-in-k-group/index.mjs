@@ -10,9 +10,9 @@
  * @param {number} k
  * @return {ListNode}
  */
-var reverseKGroup = function (head, k) {
-  let stack = [];
-  let dummyHead = new ListNode(0, null);
+function reverseKGroup(head, k) {
+  const stack = [];
+  const dummyHead = new ListNode(0, null);
   let dummyCurrent = dummyHead;
   let current = head;
 
@@ -29,7 +29,7 @@ var reverseKGroup = function (head, k) {
   dummyCurrent.next = stack[0] || null;
 
   return dummyHead.next;
-};
+}
 
 function reverseNodes(stack) {
   let current = stack.pop() || null;

@@ -14,10 +14,10 @@ function findWords(board, words) {
   const boardRow = board.length;
   const boardCol = board[0].length;
 
-  let res = [];
+  const res = [];
 
   function buildTrie(words) {
-    let root = {};
+    const root = {};
     for (const word of words) {
       let node = root;
       for (const c of word) {
@@ -42,7 +42,7 @@ function findWords(board, words) {
 
     if (!node[c]) return;
 
-    board[row][col] = '#';
+    board[row][col] = "#";
 
     for (const [dr, dc] of directions) {
       dfs(node[c], row + dr, col + dc);

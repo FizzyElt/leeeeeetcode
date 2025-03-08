@@ -1,5 +1,5 @@
 function levelOrder(root) {
-  let res = [];
+  const res = [];
 
   function traversal(root, h) {
     if (res.length === h) {
@@ -8,9 +8,9 @@ function levelOrder(root) {
       res[h].push(root.val);
     }
 
-    root.children.forEach((node) => {
+    for (const node of root.children) {
       traversal(node, h + 1);
-    });
+    }
   }
 
   return res;

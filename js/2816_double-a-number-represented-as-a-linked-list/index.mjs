@@ -10,28 +10,28 @@
  * @return {ListNode}
  */
 function doubleIt(head) {
-	function helper(head) {
-		if (head === null) {
-			return [0, null];
-		}
+  function helper(head) {
+    if (head === null) {
+      return [0, null];
+    }
 
-		const [carry, node] = helper(head.next);
+    const [carry, node] = helper(head.next);
 
-		const double = head.val * 2 + carry;
+    const double = head.val * 2 + carry;
 
-		const newCarry = Math.floor(double / 10);
+    const newCarry = Math.floor(double / 10);
 
-		head.next = node;
-		head.val = double % 10;
+    head.next = node;
+    head.val = double % 10;
 
-		return [newCarry, head];
-	}
+    return [newCarry, head];
+  }
 
-	const [carry, node] = helper(head);
+  const [carry, node] = helper(head);
 
-	if (carry > 0) {
-		return new ListNode(carry, node);
-	}
+  if (carry > 0) {
+    return new ListNode(carry, node);
+  }
 
-	return node;
+  return node;
 }

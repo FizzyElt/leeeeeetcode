@@ -9,7 +9,7 @@ function longestIdealString(s, k) {
 
   for (let i = n - 1; i >= 0; i--) {
     const cc = s.charAt(i);
-    const idx = cc.charCodeAt(0) - 'a'.charCodeAt(0);
+    const idx = cc.charCodeAt(0) - "a".charCodeAt(0);
     let maxi = Number.MIN_SAFE_INTEGER;
 
     const left = Math.max(idx - k, 0);

@@ -1,6 +1,6 @@
 function countOdds(low, high) {
-  low = low % 2 === 0 ? low + 1 : low;
-  high = high % 2 === 0 ? high - 1 : high;
+  const newLow = low % 2 === 0 ? low + 1 : low;
+  const newHigh = high % 2 === 0 ? high - 1 : high;
 
-  return (high - low) / 2 + 1;
+  return (newHigh - newLow) / 2 + 1;
 }

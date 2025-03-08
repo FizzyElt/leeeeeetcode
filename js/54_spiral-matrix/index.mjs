@@ -1,5 +1,5 @@
 function spiralOrder(matrix) {
-  let res = Array.from({ length: matrix.length * matrix[0].length });
+  const res = Array.from({ length: matrix.length * matrix[0].length });
 
   let rowStart = 0;
   let rowEnd = matrix.length - 1;
@@ -52,7 +52,7 @@ console.log(
     [5, 6, 7, 8],
     [9, 10, 11, 12],
     [13, 14, 15, 16],
-  ])
+  ]),
 );
 
 // row 0-2 col 0-2

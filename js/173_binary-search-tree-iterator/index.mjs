@@ -1,4 +1,4 @@
-var BSTIterator = function (root) {
+function BSTIterator(root) {
   const arr = [];
 
   function traverse(root) {
@@ -15,7 +15,7 @@ var BSTIterator = function (root) {
 
   this.arr = arr;
   this.index = 0;
-};
+}
 
 /**
  * @return {number}
@@ -30,5 +30,5 @@ BSTIterator.prototype.next = function () {
  * @return {boolean}
  */
 BSTIterator.prototype.hasNext = function () {
-  return this.arr[this.index] === undefined ? false : true;
+  return !!this.arr[this.index] === undefined;
 };

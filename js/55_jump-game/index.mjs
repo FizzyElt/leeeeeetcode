@@ -1,4 +1,4 @@
-var canJump = function (nums) {
+function canJump(nums) {
   let max = nums[0];
 
   for (let i = 1; i < nums.length; i++) {
@@ -7,4 +7,4 @@ var canJump = function (nums) {
   }
 
   return true;
-};
+}

@@ -12,7 +12,7 @@ const countSubTrees = (n, edges, labels) => {
       acc[target].push(origin);
       return acc;
     },
-    Array.from({ length: n }, () => [])
+    Array.from({ length: n }, () => []),
   );
 
   const resCount = new Array(n).fill(0);
@@ -24,7 +24,7 @@ const countSubTrees = (n, edges, labels) => {
 
     charCount[label] = 1;
 
-    map[root].forEach((node) => {
+    for (const node of map[root]) {
       if (node === parent) return;
 
       const subCharCount = dfs(node, root);
@@ -32,7 +32,7 @@ const countSubTrees = (n, edges, labels) => {
       for (let i = 0; i < 26; i++) {
         charCount[i] += subCharCount[i];
       }
-    });
+    }
 
     resCount[root] = charCount[label];
     return charCount;

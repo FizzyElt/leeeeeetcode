@@ -5,7 +5,7 @@ export function fourSum(nums, target) {
 
   nums.sort((a, b) => a - b);
 
-  for (let i = 0; i < nums.length - 3 ; i++) {
+  for (let i = 0; i < nums.length - 3; i++) {
     if (i > 0 && nums[i] === nums[i - 1]) continue;
 
     for (let j = i + 1; j < nums.length - 2; j++) {
