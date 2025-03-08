@@ -64,6 +64,7 @@
 - `1523` count odds
 - `1630` arithmetic subarrays
 - `1779` nearest valid point
+- `1833` maximum ice cream bars
 - `1863` subset xor sum
 - `1886` find rotation
 - `1915` number of wonderful substrings

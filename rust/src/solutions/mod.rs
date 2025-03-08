@@ -28,6 +28,7 @@ pub mod largest_perimeter_976;
 pub mod linked_list_in_binary_tree_1367;
 pub mod longest_ideal_subsequence_2370;
 pub mod maximum_bags_with_full_capacity_of_rocks_2279;
+pub mod maximum_ice_cream_bars_1833;
 pub mod minimum_falling_path_sum_II_1289;
 pub mod minimum_number_of_operations_to_make_array_xor_equal_to_k_2997;
 pub mod minimum_size_subarray_sum_209;
