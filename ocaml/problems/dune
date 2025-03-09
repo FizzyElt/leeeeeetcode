@@ -2,4 +2,5 @@
  (name problems)
  (inline_tests)
  (preprocess
-  (pps ppx_inline_test)))
+  (pps ppx_inline_test))
+ (libraries lib))

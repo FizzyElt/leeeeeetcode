@@ -1,2 +1,3 @@
 - `238` [product of array except self](./problems/product_of_array_except_self_238.ml)
 - `338` [counting bits](./problems/counting_bits_338.ml)
+- `1833` [maximum ice cream bars](./problems/maximum_ice_cream_bars_1833.ml)
